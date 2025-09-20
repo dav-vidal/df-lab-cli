@@ -1,0 +1,14 @@
+__pychache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.so
+.Python
+env/
+venv/
+myenv/
+.venv/
+.DS_Store
+.idea/
+.vscode/
