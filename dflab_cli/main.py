@@ -5,11 +5,11 @@ def _build_parser():
     p = argparse.ArgumentParser(prog="dflab")
     sub = p.add_subparsers(dest="cmd", required=True)
 
-    pg = sub.add_parser("generate", help="Generate one unit")
-    pg = sub.add_parser("--creature", help="DWARF|HUMAN|ELF", required=True)
-    pg = sub.add_parser("--caste", help="MALE|FEMALE")
-    pg = sub.add_parser("--seed", help="RNG seed", type=int)
-    pg = sub.add_parser("--save", help="Persist to Store/", action="store_true")
+    g = sub.add_parser("generate", help="Generate one unit")
+    g.add_argument("--creature", required=True)
+    g.add_argument("--caste")
+    g.add_argument("--seed", type=int)
+    g.add_argument("--save", action="store_true")
     return p
 
 def main():
