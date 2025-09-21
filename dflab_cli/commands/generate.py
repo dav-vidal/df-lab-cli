@@ -1,18 +1,18 @@
+# Use laoder to load creature and resolve caste, then call generator
 from dflab_cli.core import loader, generator
 
-def run(args):
-    creature = args.creature.upper()
-    caste_in = args.caste.upper() if args.caste else None
-    seed = args.seed
-    save = bool(args.save)
-    
-    caste_block, caste_name = loader.load_creature_caste(creature, caste_in)
-    unit = generator.generate_unit(caste_block, seed=seed)
+def main(args):
+    # Load raw creature dict and select caste or default first caste.
+    caste_block, caste_name = loader.load_creature_caste(args.creature, args.caste)
 
-    print("[DF Lab] generate")
-    print(f" creature   = {creature}")
-    print(f" caste      = {caste_name}")
-    print(f" seed       = {seed or '(random)'} save={save}")
-    print(" PHYS:", unit["physical"])
-    print(" MENT:", unit["mental"])
-    print(" BODY:", unit["body_mods"])
+    # Generate a unit from the already-narrowed caste bloack
+    unit = generator.generate_unit(caste_block, seed=args.seed)
+
+    # Minimal pretty print
+    print("== Unit ==")
+    print(f"creature: {args.creature}")
+    if args.seed is not None:
+        print(f"seed: {args.seed}")
+    for k, v in unit.items():
+        print(f"{k}: {v}")
+
