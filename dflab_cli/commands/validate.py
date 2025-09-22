@@ -1,7 +1,7 @@
 import sys
 from dflab_cli.core import loader, validator
 
-def main(args):
+def main(args=None):   # was run(args)
     try:
         idx = loader.load_creature_index()
         mp = idx.get("MAP", {})
@@ -17,10 +17,9 @@ def main(args):
                 errors.append((creature, str(e)))
                 print(f"[ERR] {creature}: {e}")
         if errors:
-            print(f"Failed: {len(errors)} creature(s).")
+            print(f"\nFailed: {len(errors)} creature(s).")
             sys.exit(1)
         print("\nAll good.")
     except Exception as e:
         print(f"[FATAL] {e}")
         sys.exit(2)
-

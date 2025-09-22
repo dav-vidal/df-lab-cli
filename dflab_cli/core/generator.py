@@ -18,24 +18,34 @@ def roll_from_cutoffs(cutoffs, rng=None):
     # draw value from that range
     return rng.randint(low, high)
 
+def _roll_percent(lo_hi, rng):
+    # roll a percentage in [lo, hi]
+    lo, hi = lo_hi
+    return rng.randint(lo, hi)
 
-def generate_unit(creature_data, seed=None):
+def generate_unit(creature_data: dict, seed: int | None = None) -> dict:
     # main generator: roll stats from cutoffs and body mods
     rng = random.Random(seed)
     
     # roll physical attributes
     phys = {}
-    for attr, cutoffs in creature_data.get("PHYS_ATT_RANGE", {}).items():
+    for attr, cutoffs in creature_data.get("PHYS_ATT_RANGES", {}).items():
         phys[attr] = roll_from_cutoffs(cutoffs, rng)
 
     # roll mental attributes
     ment = {}
-    for attr, cutoffs in creature_data.get("MENT_ATT_RANGE", {}).items():
+    for attr, cutoffs in creature_data.get("MENT_ATT_RANGES", {}).items():
         ment[attr] = roll_from_cutoffs(cutoffs, rng)
 
     # copy body mods directly
-    body = creature_data.get("BODY_MODS", {}).copy()
-    
+    body_src = creature_data.get("BODY_MODS", {})
+    body = dict(body_src)
+    for key in ("HEIGHT_%", "BROADNESS_%", "LENGTH_%"):
+        if key in body_src and isinstance(body_src[key], (list, tuple)) and len(body_src[key]) == 2:
+            body[key] = _roll_percent(body_src[key], rng)
+        elif key not in body_src:
+            body[key] = 100 # deafult 100%
+            
     # int empty skills
     skills = {}
     
