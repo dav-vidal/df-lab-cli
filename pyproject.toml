@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "df-lab-cli"
+version = "0.1.0"
+description = "Lightweight CLI to generate and store units from YAML specs."
+authors = [
+  { name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "PyYAML"
+]
+
+[project.scripts]
+dflab-cli = "dflab_cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["dflab*"]
+exclude = ["Store*", "specs*"]
