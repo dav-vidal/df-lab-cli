@@ -1,8 +1,0 @@
-# Creature Index
-MAP:
-    HUMAN:  Configs/Creatures/HUMAN.yaml
-    DWARF:  Configs/Creatures/DWARF.yaml
-    ELF:    Configs/Creatures/ELF.yaml
-DEFAULT: HUMAN          # fallback chain: Requested → Human → NormalFallback
-ALLOW_NORMAL_FALLBACK: true     # if profile file missing or invalid
-
