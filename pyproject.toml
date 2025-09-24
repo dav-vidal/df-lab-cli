@@ -12,11 +12,11 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-  "PyYAML"
+  "PyYAML", "black", "ruff", "ruff-lsp"
 ]
 
 [project.scripts]
-dflab-cli = "dflab_cli.main:main"
+dflab-cli = "dflab.main:main"
 
 [tool.setuptools.packages.find]
 include = ["dflab*"]
