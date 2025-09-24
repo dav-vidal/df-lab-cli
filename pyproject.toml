@@ -1,12 +1,13 @@
 [project]
 name = "df-lab-cli"
 version = "0.1.0"
+<<<<<<< HEAD
 requires-python = ">=3.11"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["dflab"]
-exclude = ["specs", "Store"]
+include = ["dflab*"]
+exclude = ["specs*", "Store*"]
 
 [tool.black]
 line-length = 100
