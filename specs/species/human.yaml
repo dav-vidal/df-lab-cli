@@ -1,0 +1,58 @@
+"CASTES":
+  "MALE":
+    "BODY_SPECS":
+      "BASE_SIZE_CM3": 70000
+      "BODY_MODS":
+        "HEIGHT_%": [75, 125]
+        "BROADNESS_%": [75, 125]
+        "LENGTH_%": [75, 125]
+    "PHYS_ATTRS_CUTS_SHIFT":
+      "STRENGTH": "None"
+      "AGILITY": "None"
+      "TOUGHNESS": "None"
+      "ENDURANCE": "None"
+      "RECUPERATION": "None"
+      "DISEASE_RECOVERY": "None"
+    "MENT_ATTRS_CUTS_SHIFT":
+      "ANALYTICAL_ABILITY": "None"
+      "FOCUS": "None"
+      "WILLPOWER": "None"
+      "CREATIVITY": "None"
+      "INTUITION": "None"
+      "PATIENCE": "None"
+      "MEMORY": "None"
+      "LINGUISTIC_ABILITY": "None"
+      "SPATIAL_SENSE": "None"
+      "MUSICALITY": "None"
+      "KINESTHETIC_SENSE": "None"
+      "EMPATHY": "None"
+      "SOCIAL_AWARENESS": "None"
+
+  "FEMALE":
+    "BODY_SPECS":
+      "BASE_SIZE_CM3": 70000
+      "BODY_MODS":
+        "HEIGHT_%": [75, 125]
+        "BROADNESS_%": [75, 125]
+        "LENGTH_%": [75, 125]
+    "PHYS_ATTRS_CUTS_SHIFT":
+      "STRENGTH": "None"
+      "AGILITY": "None"
+      "TOUGHNESS": "None"
+      "ENDURANCE": "None"
+      "RECUPERATION": "None"
+      "DISEASE_RECOVERY": "None"
+    "MENT_ATTRS_CUTS_SHIFT":
+      "ANALYTICAL_ABILITY": "None"
+      "FOCUS": "None"
+      "WILLPOWER": "None"
+      "CREATIVITY": "None"
+      "INTUITION": "None"
+      "PATIENCE": "None"
+      "MEMORY": "None"
+      "LINGUISTIC_ABILITY": "None"
+      "SPATIAL_SENSE": "None"
+      "MUSICALITY": "None"
+      "KINESTHETIC_SENSE": "None"
+      "EMPATHY": "None"
+      "SOCIAL_AWARENESS": "None"

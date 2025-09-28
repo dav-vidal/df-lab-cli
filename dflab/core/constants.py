@@ -6,10 +6,10 @@ Modular by design: add/remove attributes by editing the lists below.
 """
 
 # --- Global numerical deafults (tunnable) ---
-STEP = 200              # distance between cutoff tiers
-PHYS_MEDIAN_DEFAULT = 1000     # fallback median for physical attributes
-MENT_MEDIAN_DEFAULT = 1100     # fallback median for mental atrributes
+STEP = 250              # distance between cutoff tiers
 ABS_MIN_DEFAULT = 0     # floor for any attribute unless overridden
+DEFAULT_PHYS_ATTRS_CUTS = [200, 700, 900, 1000, 1100, 1300, 2000]
+DEFAULT_MENT_ATTRS_CUTS = [300, 800, 1000, 1100, 1200, 1400, 2100]      # mental distribution has higher median
 
 # --- Attribute catalogs (DF-inspired, no personalities here) ---
 
@@ -50,14 +50,17 @@ ATTRIBUTES_GROUPS = {
 }
 
 # File system layout (kept here so storage/commands share one source of truth)
-STORE_DIR = "Store"
+DFLAB_ROOT = "~/Projects/df-lab-cli"
+STORE_DIR = f"{DFLAB_ROOT}/Store"
 UNITS_DIR = f"{STORE_DIR}/Units"
-INDEX_PATH = f"{STORE_DIR}/UnitIndex.yaml"
-
+INDEX_FILE = f"{STORE_DIR}/UnitIndex.yaml"
+SPECS_DIR = f"{DFLAB_ROOT}/specs"
 # Specs defaults (expected keys in YAML). Centralizing names avoids typos.
-SPEC_KEYS = {
+
+
+SPECS_KEYS = {
     "ATTRIBUTES": "ATTRIBUTES",
-    "STEPS": "STEPS",
+    "STEP": "STEP",
     "ABS_MIN_DEFAULT": "ABS_MIN_DEFAULT",
     "ABS_MIN": "ABS_MIN",
     "PHYS_ATT_RANGES": "PHYS_ATT_RANGES",
