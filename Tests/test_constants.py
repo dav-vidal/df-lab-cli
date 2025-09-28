@@ -1,4 +1,4 @@
-from dflab.core.constants import (
+from dflab.Core.constants import (
     STEP,
     PHYS_MEDIAN_DEFAULT,
     MENT_MEDIAN_DEFAULT,
@@ -7,6 +7,7 @@ from dflab.core.constants import (
     MENTAL_ATTRS,
     ATTRIBUTES,
 )
+
 
 def test_defaults_and_catalogs():
     assert STEP == 250
