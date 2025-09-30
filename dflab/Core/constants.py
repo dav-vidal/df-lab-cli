@@ -53,6 +53,7 @@ ATTRIBUTES_GROUPS = {
 DFLAB_ROOT = "/home/david/Projects/df-lab-cli"
 STORE_DIR = f"{DFLAB_ROOT}/Store"
 SPECS_DIR = f"{DFLAB_ROOT}/Specs"
+RACE_DIR = f"{SPECS_DIR}/Race"
 UNITS_DIR = f"{STORE_DIR}/Units"
 UNIT_INDEX_FILE = f"{STORE_DIR}/unit_index.yaml"
 RACE_INDEX_FILE = f"{SPECS_DIR}/race_index.yaml"

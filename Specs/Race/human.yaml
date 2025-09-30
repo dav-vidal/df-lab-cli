@@ -6,27 +6,27 @@
         "HEIGHT_%": [75, 125]
         "BROADNESS_%": [75, 125]
         "LENGTH_%": [75, 125]
-    "PHYS_ATTRS_CUTS_SHIFT":
-      "STRENGTH": "None"
-      "AGILITY": "None"
-      "TOUGHNESS": "None"
-      "ENDURANCE": "None"
-      "RECUPERATION": "None"
-      "DISEASE_RECOVERY": "None"
-    "MENT_ATTRS_CUTS_SHIFT":
-      "ANALYTICAL_ABILITY": "None"
-      "FOCUS": "None"
-      "WILLPOWER": "None"
-      "CREATIVITY": "None"
-      "INTUITION": "None"
-      "PATIENCE": "None"
-      "MEMORY": "None"
-      "LINGUISTIC_ABILITY": "None"
-      "SPATIAL_SENSE": "None"
-      "MUSICALITY": "None"
-      "KINESTHETIC_SENSE": "None"
-      "EMPATHY": "None"
-      "SOCIAL_AWARENESS": "None"
+    "PHYS_ATTRS_SHIFT":
+      "STRENGTH": 0
+      "AGILITY": 0
+      "TOUGHNESS": 0
+      "ENDURANCE": 0
+      "RECUPERATION": 0
+      "DISEASE_RECOVERY": 0
+    "MENT_ATTRS_SHIFT":
+      "ANALYTICAL_ABILITY": 0
+      "FOCUS": 0
+      "WILLPOWER": 0
+      "CREATIVITY": 0
+      "INTUITION": 0
+      "PATIENCE": 0
+      "MEMORY": 0
+      "LINGUISTIC_ABILITY": 0
+      "SPATIAL_SENSE": 0
+      "MUSICALITY": 0
+      "KINESTHETIC_SENSE": 0
+      "EMPATHY": 0
+      "SOCIAL_AWARENESS": 0
 
   "FEMALE":
     "BODY_SPECS":
@@ -35,24 +35,24 @@
         "HEIGHT_%": [75, 125]
         "BROADNESS_%": [75, 125]
         "LENGTH_%": [75, 125]
-    "PHYS_ATTRS_CUTS_SHIFT":
-      "STRENGTH": "None"
-      "AGILITY": "None"
-      "TOUGHNESS": "None"
-      "ENDURANCE": "None"
-      "RECUPERATION": "None"
-      "DISEASE_RECOVERY": "None"
-    "MENT_ATTRS_CUTS_SHIFT":
-      "ANALYTICAL_ABILITY": "None"
-      "FOCUS": "None"
-      "WILLPOWER": "None"
-      "CREATIVITY": "None"
-      "INTUITION": "None"
-      "PATIENCE": "None"
-      "MEMORY": "None"
-      "LINGUISTIC_ABILITY": "None"
-      "SPATIAL_SENSE": "None"
-      "MUSICALITY": "None"
-      "KINESTHETIC_SENSE": "None"
-      "EMPATHY": "None"
-      "SOCIAL_AWARENESS": "None"
+    "PHYS_ATTRS_SHIFT":
+      "STRENGTH": 0
+      "AGILITY": 0
+      "TOUGHNESS": 0
+      "ENDURANCE": 0
+      "RECUPERATION": 0
+      "DISEASE_RECOVERY": 0
+    "MENT_ATTRS_SHIFT":
+      "ANALYTICAL_ABILITY": 0
+      "FOCUS": 0
+      "WILLPOWER": 0
+      "CREATIVITY": 0
+      "INTUITION": 0
+      "PATIENCE": 0
+      "MEMORY": 0
+      "LINGUISTIC_ABILITY": 0
+      "SPATIAL_SENSE": 0
+      "MUSICALITY": 0
+      "KINESTHETIC_SENSE": 0
+      "EMPATHY": 0
+      "SOCIAL_AWARENESS": 0
